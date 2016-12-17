@@ -1,0 +1,25 @@
+// Renaming Windows
+
+<Hotkey Ctrl R>
+<SendPC local>
+
+<RenameWin "Toontown Rewritten [BETA]" TT1>
+<RenameWin "Toontown Rewritten [BETA]" TT2> 
+
+<Label w1 Local SendWinM TT1>
+<Label w2 Local SendWinM TT2>
+
+<MovementHotkey NumLockOn up,down,left,right,space>
+<SendLabel w1, w2>
+<Key %Trigger%> 
+
+
+<Hotkey NumLockOn LButton, MButton, RButton, Button4, Button5>
+<SendLabel w1, w2> 
+<ClickMouse %TriggerMainKey%>
+
+<Hotkey Button4>
+<TurnHotkeysOff>
+
+<Hotkey Button5>
+<TurnHotkeysOn>
